@@ -13,6 +13,10 @@ db.authenticate().then(() => {
 
 sync();
 
+app.use(express.json());
+
+app.use('/register', require('./routes/register'));
+
 app.listen(PORT, () => {
     console.log(`Server is up and running on port ${PORT}`);
 });
