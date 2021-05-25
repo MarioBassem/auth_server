@@ -24,10 +24,10 @@ const User = db.define('user', {
         allowNull: false,
 
     },
-    token: {
-        type: DataTypes.JSON,
-        allowNull: false,
-    }
+    // token: {
+    //     type: DataTypes.JSON,
+    //     allowNull: false,
+    // }
 });
 
 module.exports = User;

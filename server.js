@@ -12,6 +12,7 @@ db.authenticate().then(() => {
 });
 
 sync();
+require('dotenv').config()
 
 app.use(express.json());
 
